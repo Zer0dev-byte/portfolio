@@ -140,3 +140,7 @@ function animate() {
 animate();
 
 animate();
+animate();
+animate();
+animate();
+animate();
