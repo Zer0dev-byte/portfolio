@@ -94,6 +94,14 @@ const moon = new THREE.Mesh(
   })
 );
 
+function spinMoon() {
+  moon.rotation.x += 0.05;
+  moon.rotation.y += 0.075;
+  moon.rotation.z += 0.05;
+}
+
+spinMoon();
+
 scene.add(moon);
 
 moon.position.z = 30;
@@ -106,9 +114,6 @@ jeff.position.x = 2;
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  moon.rotation.x += 0.05;
-  moon.rotation.y += 0.075;
-  moon.rotation.z += 0.05;
 
   jeff.rotation.y += 0.01;
   jeff.rotation.z += 0.01;
